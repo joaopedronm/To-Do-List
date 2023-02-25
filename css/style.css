@@ -1,0 +1,142 @@
+/* 2371ff azul, a6f750 verde */
+
+/* Geral */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/Thumb-Ada.png);
+    /* background-image: url("../img/ad.jpg"); */
+    background-size: cover;
+}
+
+button {
+    background-color: #fdfdfd;
+    color: #2371ff;
+    border: 1px solid #2371ff;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+button:hover {
+    background-color: #2371ff;
+    color: #fff;
+}
+
+button:hover > i {
+    color: #fff;
+}
+
+button i {
+    color: #2371ff;
+    pointer-events: none; /* faz com que ao clicar no ícone o evento dispare mesmo assim */
+}
+
+input, select {
+    padding: .24rem 0.5rem;
+}
+
+.hide {
+    display: none;
+}
+
+/* To Do Header */
+
+.todo-container {
+    max-width: 650px;
+    margin: 3rem auto 0;
+    background-color: #fdfdfd;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.todo-container header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #a6f750;
+}
+
+.todo-container header h1 {
+    color: #2371ff;
+}
+
+/* To Do Form */
+
+#todo-form, #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid #a6f750;
+}
+
+#todo-form p, #edit-form p {
+    margin-bottom: .5rem;
+    font-weight: bold;
+    color: #2371ff;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: .5rem;
+}
+
+.form-control select {
+    margin-right: .5rem;
+}
+
+#cancel-edit-btn {
+    margin-top: .4rem;
+    font-size: .8rem;
+}
+
+/* To Do List */
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: .3s;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: .9rem;
+}
+
+.todo button {
+    margin-left: .4rem;
+}
+
+.done {
+    background-color: #078c00;
+}
+
+.done h3 {
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.done p {
+    color: #fff;
+    font-style: italic;
+}
+
+.span-values {
+    display: flex;
+    gap: 1.5rem;
+    font-size: .8rem;
+}
